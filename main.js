@@ -1,3 +1,14 @@
+window.addEventListener('load', function () {
+  const loaderWrapper = document.querySelector('.loader-wrapper');
+  const mainContent = document.getElementById('main-content');
+
+  // Hide loader and show main content after 3 seconds
+  setTimeout(() => {
+      loaderWrapper.style.display = 'none'; // Hide the loader
+      mainContent.style.display = 'block'; // Show the main content
+  }, 2000); // Adjust this time as needed
+});
+
 // Typing Animation
 const typedTextSpan = document.querySelector('.typed-text');
 const texts = ['Frontend Developer', 'Backend Developer', 'Problem Solver'];
