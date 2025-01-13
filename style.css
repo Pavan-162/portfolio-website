@@ -262,7 +262,7 @@ nav {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #333;
-  margin-right: 20px;
+  margin: 0;
 }
 
 /* Sections */
