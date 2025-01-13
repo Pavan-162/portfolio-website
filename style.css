@@ -41,7 +41,7 @@
 
 /* From Uiverse.io by mobinkakei */ 
 .loader {
-  --path: #b02ac1;
+  --path: var(--primary-color);
   --dot: #5628ee;
   --duration: 3s;
   width: 44px;
