@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" data-qb-installed="true"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
@@ -8,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-     <div class="loader-wrapper">
+     <div class="loader-wrapper" style="display: none;">
         <div class="loader">
             <svg viewBox="0 0 80 80">
               <circle r="32" cy="40" cx="40" id="test"></circle>
@@ -45,7 +43,7 @@
         <div class="container">
             <a class="my-profile"><img src="https://i.ibb.co/JjRYJw0k/Whats-App-Image-2025-09-26-at-20-00-49-17850837.jpg" alt=""></a>
             <h1>Hey, I'm Nampalli Pavan Sai</h1>
-            <p class="typing-text">I'm a <span class="typed-text"></span></p>
+            <p class="typing-text">I'm a <span class="typed-text">Prob</span></p>
             <div class="social-links">
                 <a href="https://github.com/Pavan-162"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/nampalli-pavan-sai"><i class="fab fa-linkedin"></i></a>
@@ -87,19 +85,19 @@
                     <h3>MongoDB</h3>
                 </div>
                 <div class="skill-card">
-                    <i class='fab fa-node-js'></i>
+                    <i class="fab fa-node-js"></i>
                     <h3>Node.js</h3>
                 </div>
                 <div class="skill-card">
-                    <i class='fab fa-python'></i>
+                    <i class="fab fa-python"></i>
                     <h3>Python</h3>
                 </div>
                 <div class="skill-card">
-                    <i class='fab fa-c'></i>
+                    <i class="fab fa-c"></i>
                     <h3>C Language</h3>
                 </div>
                 <div class="skill-card">
-                    <i class='fab fa-react'></i>
+                    <i class="fab fa-react"></i>
                     <h3>React.js</h3>
                 </div>
             </div>
@@ -110,6 +108,16 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image"><img class="i-2" src="https://i.ibb.co/Qv282fPW/campus-ride-image.png" alt=""></div>
+                    <h3>Campus Ride</h3>
+                    <p>CampusRide is a secure and affordable ride-sharing platform designed exclusively for college students to travel together and split commuting costs.</p>
+                    <div class="project-links">
+                        <a href="https://pavan-162.github.io/Campus-Ride/" class="btn">Site Link</a>
+                        <a href="https://github.com/Pavan-162/Campus-Ride/" class="btn">Source Code</a>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="project-image"><img class="i-1" src="https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg" alt=""></div>
                     <h3>Daily Task Tracker</h3>
@@ -120,16 +128,7 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"><img class="i-2" src="https://codingartistweb.com/wp-content/uploads/2023/02/currency-converter-01.png" alt=""></div>
-                    <h3>Currency Converter</h3>
-                    <p>A currency converter built with HTML, CSS, and JavaScript that lets users convert amounts between different currencies with real-time exchange rates, providing a quick and efficient way to make conversions.</p>
-                    <div class="project-links">
-                        <a href="https://pavan-162.github.io/Currency-Converter/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/Currency-Converter" class="btn">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image"><img class="i-3" src="https://i.ytimg.com/vi/R5XeCyeVmUg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCQhhjG9SsTIVxJ2U43UUDn9N_VwA" alt=""></div>
+                    <div class="project-image"><img class="i-3" src="https://i.ytimg.com/vi/R5XeCyeVmUg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLCQhhjG9SsTIVxJ2U43UUDn9N_VwA" alt=""></div>
                     <h3>Rock Paper Scissor Game</h3>
                     <p>An interactive Rock Paper Scissors game developed with HTML, CSS, and JavaScript where users can play against the computer. It displays the results instantly and offers a fun, engaging experience.</p>
                     <div class="project-links">
@@ -174,30 +173,68 @@
             <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="ed3a58b1-23c7-48ab-9e8c-d672939a9100">
                 <div class="form-group">
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required="" fdprocessedid="4mrrc">
                     <label for="name">Name</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required="" fdprocessedid="66fxcg">
                     <label for="email">Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required=""></textarea>
                     <label for="message">Message</label>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" fdprocessedid="8vtcq6">Send Message</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 @Nampalli Pavan Sai. All rights reserved.</p>
+            <p>© 2025 @Nampalli Pavan Sai. All rights reserved.</p>
         </div>
     </footer>
 
+     <script>
+    // 1. Disable Right-Click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        // Optional: Alert the user
+        // alert("Right-click is disabled on this site."); 
+    });
+
+    // 2. Disable Keyboard Shortcuts (F12, Ctrl+Shift+I, Ctrl+U, etc.)
+    document.onkeydown = function(e) {
+        // F12
+        if (e.keyCode == 123) {
+            return false;
+        }
+
+        // Ctrl + Shift + I (Inspect)
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+
+        // Ctrl + Shift + J (Console)
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+
+        // Ctrl + Shift + C (Element Selector)
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+
+        // Ctrl + U (View Source)
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    };
+</script>
+
     <script src="main.js"></script>
-</body>
-</html>
 
 
+
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
