@@ -1,208 +1,263 @@
-<html lang="en" data-qb-installed="true"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Nampalli Pavan Sai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-     <div class="loader-wrapper" style="display: none;">
-        <div class="loader">
-            <svg viewBox="0 0 80 80">
-              <circle r="32" cy="40" cx="40" id="test"></circle>
-            </svg>
-          </div>
-          
-          <div class="loader triangle">
-            <svg viewBox="0 0 86 80">
-              <polygon points="43 8 79 72 7 72"></polygon>
-            </svg>
-          </div>
-          
-          <div class="loader">
-            <svg viewBox="0 0 80 80">
-              <rect height="64" width="64" y="8" x="8"></rect>
-            </svg>
-          </div>
+
+
+ <div id="loader-wrapper">
+        <div class="🤚">
+          <div class="👉"></div>
+          <div class="👉"></div>
+          <div class="👉"></div>
+          <div class="👉"></div>
+          <div class="🌴"></div>    
+          <div class="👍"></div>
+        </div>
     </div>
     <div id="root"></div>
-    <nav>
-        <div class="nav-content">
-            <div class="logo">Pavan's Portfolio</div>
-               <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+    <nav class="floating-nav">
+        <div class="nav-brand">Pavan<span>folio.</span></div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-
-    <section id="home">
-        <div class="container">
-            <a class="my-profile"><img src="https://i.ibb.co/JjRYJw0k/Whats-App-Image-2025-09-26-at-20-00-49-17850837.jpg" alt=""></a>
-            <h1>Hey, I'm Nampalli Pavan Sai</h1>
-            <p class="typing-text">I'm a <span class="typed-text">Prob</span></p>
-            <div class="social-links">
-                <a href="https://github.com/Pavan-162"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nampalli-pavan-sai"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/Pavan_1128"><i class="fab fa-twitter"></i></a>
+    <header id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-container reveal">
+            <div class="hero-image-wrapper">
+                <img src="https://i.ibb.co/JjRYJw0k/Whats-App-Image-2025-09-26-at-20-00-49-17850837.jpg" alt="Profile" class="profile-img">
+                <div class="image-glow"></div>
             </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer dedicated to creating exceptional digital experiences. With a learning foundation in web development, I bring ideas to life through clean, efficient code and intuitive design.</p>
-                    <p>My journey in technology has equipped me with both technical knowledge and creative problem-solving skills, allowing me to tackle intermediate challenges with innovative solutions.</p>
+            <div class="hero-text">
+                <h1>Nampalli Pavan Sai</h1>
+                <p class="role-text">I am a <span id="typewriter"></span><span class="cursor">|</span></p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">Explore Work</a>
+                    <a href="#contact" class="btn secondary">Connect with me</a>
                 </div>
             </div>
         </div>
+    </header>
+
+    <section id="about" class="section-padding reveal">
+        <div class="container wrapper-sm">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card layout-split">
+                <p class="lead-text">
+                    I'm a passionate developer dedicated to creating exceptional digital experiences. My journey in technology has equipped me with both technical knowledge and creative problem-solving skills, allowing me to tackle intermediate challenges with innovative solutions.
+                </p>
+                <p>
+                    Beyond code, I am deeply passionate about community building. Whether I'm organizing hackathons, demystifying new AI tools, or leading tech initiatives, I believe in empowering others to build their dreams alongside my own.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
+ 
+
+    <section id="experience" class="section-padding reveal">
         <div class="container">
-            <h2>Skills</h2>
+            <h2 class="section-title">Experience & Leadership</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Present</span>
+                        <h3>Founder <span>@ Start Your Dream</span></h3>
+                        <p>Running a 500+ members community offering internships, jobs, learning resources, tech event updates and networking opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Aug 2025 - Dec 2025</span>
+                        <h3>Google Student Ambassador <span>@ Google Gemini</span></h3>
+                        <p>Conducted workshops and hackathons twice a month for 150-300+ participants. Expanded campus community by 400+ members.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Sep 2025 - Dec 2025</span>
+                        <h3>Web App Developer Intern <span>@ MicroSysLogic Technologies</span></h3>
+                        <p>Contributed to web application development and feature implementation within a dynamic six-person team.</p>
+                    </div>
+                </div>
+
+                 <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">NGO Work</span>
+                        <h3>Public Relations Officer <span>@ CyberHope Helps Initiative Foundation</span></h3>
+                        <p>Collaborating, Conducting workshops, awareness sessions, and membership drives focused on cybersecurity and new AI tools across multiple college campuses.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+       <section id="skills" class="section-padding reveal">
+        <div class="container">
+            <h2 class="section-title">My Toolkit</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
+                <div class="skill-category glass-card">
+                    <h3>Frontend & Backend</h3>
+                    <div class="pill-group">
+                        <span class="pill">HTML / CSS</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">React</span>
+                        <span class="pill">Node.js</span>
+                        <span class="pill">Express.js</span>
+                        <span class="pill">MongoDB</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>MongoDB</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-node-js"></i>
-                    <h3>Node.js</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-c"></i>
-                    <h3>C Language</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React.js</h3>
+                <div class="skill-category glass-card">
+                    <h3>Core Competencies</h3>
+                    <div class="pill-group">
+                        <span class="pill accent-pill">Leadership</span>
+                        <span class="pill accent-pill">Time Management</span>
+                        <span class="pill accent-pill">Public Speaking</span>
+                        <span class="pill accent-pill">Problem-Solving</span>
+                        <span class="pill accent-pill">Communication</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+   <section id="projects" class="section-padding reveal">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="project-grid-3d">
                 
-                <div class="project-card">
-                    <div class="project-image"><img class="i-2" src="https://i.ibb.co/Qv282fPW/campus-ride-image.png" alt=""></div>
-                    <h3>Campus Ride</h3>
-                    <p>CampusRide is a dedicated ride-sharing platform designed specifically for college students to travel together safely while significantly reducing commuting costs. The platform prioritizes security through a mandatory student ID verification.</p>
-                    <div class="project-links">
-                        <a href="https://pavan-162.github.io/Campus-Ride/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/Campus-Ride/" class="btn">Source Code</a>
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="https://i.ibb.co/dJjKpsg1/campus-ride-image.png" alt="Campus-Ride">
+                            <div class="project-front-overlay">
+                                <h3>Campus-Ride</h3>
+                                <span class="project-tech">Student ride sharing website</span>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Campus-Ride</h3>
+                            <p>A streamlined transportation and ride-sharing platform specifically tailored for campus environments.</p>
+                            <div class="project-links">
+                                <a href="https://pavan-162.github.io/Campus-Ride/" class="btn primary btn-sm" target="_blank">Live Site</a>
+                                <a href="https://github.com/Pavan-162/Campus-Ride/" class="btn secondary btn-sm" target="_blank">Source Code</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image"><img class="i-5" src="https://cdn.dribbble.com/users/196435/screenshots/10831207/product_cards_cover_4x.png" alt=""></div>
-                    <h3>Lumos - Ecommerce</h3>
-                    <p>Lumos features a minimalist interface that emphasizes a seamless shopping experience with intuitive navigation and sophisticated design. From luxury watches to smart home essentials, a digital destination for elevating daily life.</p>
-                    <div class="project-links">
-                        <a href="https://lumosecommercewebsite.vercel.app/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/E-Commerce-Website/" class="btn">Source Code</a>
+
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="https://i.ibb.co/FkhrVbFR/lumos.png" alt="AI House">
+                            <div class="project-front-overlay">
+                                <h3>Lumos - Premium Goods</h3>
+                                <span class="project-tech">An Ecommerce Website</span>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Lumos - Premium Goods</h3>
+                            <p>An innovative home automation project featuring intelligent, automated environmental controls.</p>
+                            <div class="project-links">
+                                <a href="https://lumosecommercewebsite.vercel.app/" class="btn primary btn-sm" target="_blank">Live Site</a>
+                                <a href="https://github.com/Pavan-162/E-Commerce-Website" class="btn secondary btn-sm" target="_blank">Source Code</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image"><img class="i-1" src="https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg" alt=""></div>
-                    <h3>Daily Task Tracker</h3>
-                    <p>This web application is built to help users efficiently manage their daily tasks and long-term goals. It features a clean, user-friendly interface for adding, organizing, and tracking tasks with ease, promoting better productivity, focus, and time management.</p>
-                    <div class="project-links">
-                        <a href="https://pavan-162.github.io/Daily-Task-Tracker/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/Daily-Task-Tracker/" class="btn">Source Code</a>
+
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg" alt="Daily-Task-Tracker">
+                            <div class="project-front-overlay">
+                                <h3>Daily-Task-Tracker</h3>
+                                <span class="project-tech">Your Producivity Tracker</span>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Daily-Task-Tracker</h3>
+                            <p>A clean, efficient web application designed to optimize daily workflows and task management.</p>
+                            <div class="project-links">
+                                <a href="https://pavan-162.github.io/Daily-Task-Tracker/" class="btn primary btn-sm" target="_blank">Live Site</a>
+                                <a href="https://github.com/Pavan-162/Daily-Task-Tracker" class="btn secondary btn-sm" target="_blank">Source Code</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image"><img class="i-3" src="https://i.ytimg.com/vi/R5XeCyeVmUg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLCQhhjG9SsTIVxJ2U43UUDn9N_VwA" alt=""></div>
-                    <h3>Rock Paper Scissor Game</h3>
-                    <p>An interactive Rock Paper Scissors game developed with HTML, CSS, and JavaScript where users can play against the computer. It displays the results instantly and offers a fun, engaging experience.</p>
-                    <div class="project-links">
-                        <a href="https://pavan-162.github.io/Rock-Paper-Scissor-game/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/Rock-Paper-Scissor-game" class="btn">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image"><img class="i-4" src="https://blogger.googleusercontent.com/img/a/AVvXsEjmsR1byL2zBVPNNqsgTyEej2Gie7tiQbZxRd7BlJ5BGmf59gtGGO0E62SbMeW6hizVQCFiOjTOIiWytjK_92vCgBibLECZkLveuqo7KlGGYm6BBb0LJL3ZCmHC21DnHtXtE85W62hOar_gT4Z54P2V1RClxPEtP4er7UPgF-a-eTXZ1laF1UfPPymD=w1200-h630-p-k-no-nu" alt=""></div>
-                    <h3>Digital Clock</h3>
-                    <p>A real-time digital clock created using HTML, CSS, and JavaScript that shows the current time in a simple and clean format, updating automatically without the need for manual refresh.</p>
-                    <div class="project-links">
-                        <a href="https://pavan-162.github.io/Digital-Clock/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/Digital-Clock" class="btn">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image"><img class="i-6" src="https://formcarry.com/blog/content/images/2022/10/Cover.jpg" alt=""></div>
-                    <h3>Contact Form</h3>
-                    <p>A simple and user-friendly contact form built using HTML, CSS, and JavaScript, allowing users to easily submit their name, email, subject, and message. It features a clean design and provides instant feedback upon form submission.</p>
-                    <div class="project-links">
-                        <a href="https://pavan-162.github.io/contact-form/" class="btn">Site Link</a>
-                        <a href="https://github.com/Pavan-162/contact-form" class="btn">Source Code</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="ed3a58b1-23c7-48ab-9e8c-d672939a9100">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" required="" fdprocessedid="4mrrc">
-                    <label for="name">Name</label>
+    <section id="contact" class="section-padding reveal">
+        <div class="container wrapper-sm">
+            <h2 class="section-title text-center">Let's Build Something</h2>
+            <div class="glass-card contact-wrapper"> 
+             <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="8cb82224-a62f-440a-bfe8-fe0f5f77e7ef">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required placeholder=" ">
+                    <label for="name">Your Name</label>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" required="" fdprocessedid="66fxcg">
-                    <label for="email">Email</label>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <label for="email">Your Email</label>
                 </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" required=""></textarea>
-                    <label for="message">Message</label>
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                    <label for="message">Your Message</label>
                 </div>
-                <button type="submit" class="btn" fdprocessedid="8vtcq6">Send Message</button>
+                <button type="submit" class="btn primary full-width">Send Message</button>
             </form>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 @Nampalli Pavan Sai. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Pavan<span>folio.</span></h2>
+                <p>Building the future with AI and Web Technologies.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/nampalli-pavan-sai/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Pavan-162" target="_blank">GitHub</a>
+                <a href="https://x.com/Pavan_1128" target="_blank">Twitter / X</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nampalli Pavan Sai. All rights reserved.</p>
         </div>
     </footer>
 
-
-    <script src="main.js"></script>
-
-
-
-
-<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
