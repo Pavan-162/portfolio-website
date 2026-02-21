@@ -259,6 +259,23 @@
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="main.js"></script>
+        <script>
+    // 1. Disable Right-Click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        // Optional: Alert the user
+        // alert("Right-click is disabled on this site."); 
+    });
+
+    // 2. Disable Keyboard Shortcuts (F12, Ctrl+Shift+I, Ctrl+U, etc.)
+    document.onkeydown = function(e) {
+        // F12
+        if (e.keyCode == 123) {
+            return false;
+        }
+    };
+</script>
 </body>
 </html>
+
 
